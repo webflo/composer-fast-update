@@ -1,0 +1,14 @@
+{
+    "name": "fweber/composer-fast-update",
+    "require": {
+        "composer/composer": "^1.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Florian Weber",
+            "email": "florian.weber@ueberbit.de"
+        }
+    ],
+    "minimum-stability": "dev"
+}
