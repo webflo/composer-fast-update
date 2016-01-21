@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once '/Users/fweber/bin/composer-cli/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 $args = array_reverse($argv);
 $version = array_shift($args);
@@ -13,7 +13,7 @@ if (empty($package_name) || empty($version)) {
   return;
 }
 
-$filepath = __DIR__ . '/../composer.lock';
+$filepath = $_SERVER['PWD'] . '/composer.lock';
 $composer_lock = json_decode(file_get_contents($filepath), TRUE);
 $write = FALSE;
 
