@@ -13,11 +13,11 @@ ln -nfs $(pwd)/composer-fast-update.php ~/bin/composer-fast-update
 ## Usage
 
 ```
-composer-fast-update.php vendor/my-package git-branch
+composer-fast-update vendor/my-package git-branch
 ```
 
 ## Example
 
 ```
-composer-fast-update.php drupal/field_group 8.x-1.x
+composer-fast-update drupal/field_group 8.x-1.x
 ```
